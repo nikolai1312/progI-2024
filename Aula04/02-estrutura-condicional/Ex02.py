@@ -16,6 +16,12 @@ Saída:
 def eh_maior(a, b):
     return a > b
 
+def eh_menor(a, b):
+    return a < b
+
+def eh_igual(a, b):
+    return a == b
+
 numero1 = int(input("Digite o primeiro número: "))
 numero2 = int(input("Digite o segundo número: "))
 
@@ -25,4 +31,12 @@ if eh_maior(numero1, numero2):
 else:
     print(f"{numero1} não é maior que {numero2}.")
 
-# continue com as outras comparações
+if eh_menor(numero1, numero2):
+    print(f"{numero1} é menor que {numero2}.")
+else:
+    print(f"{numero1} não é menor que {numero2}.")
+
+if eh_igual(numero1, numero2):
+    print(f"{numero1} é igual ao {numero2}.")
+else:
+    print(f"{numero1} não é igual {numero2}.")

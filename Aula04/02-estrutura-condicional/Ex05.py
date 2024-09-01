@@ -12,6 +12,15 @@ Saída:
 aprovado
 
 """
+def verificar_status_aluno(nota: float):
+    if(nota < 6):
+        return "reprovado"
+
+    if(nota >= 6 and nota <= 7):
+        return "recuperação"
+
+    if(nota > 7):
+        return "aprovado"
 
 # Solicitando a nota ao usuário
 nota = float(input("Digite a nota do aluno: "))
